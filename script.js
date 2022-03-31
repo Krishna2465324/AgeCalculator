@@ -17,6 +17,11 @@ function age() {
     }  
     var d = d2 - d1;  
     var m = m2 - m1;  
-    var y = y2 - y1;  
+    var y = y2 - y1; 
+    if(y<0){
+        document.getElementById('age').innerHTML ="Invalid Year";
+    }
+    else{
     document.getElementById('age').innerHTML = 'Your Age is '+y+' Years '+m+' Months '+d+' Days';  
+    }  
    }  
